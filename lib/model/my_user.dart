@@ -9,7 +9,7 @@ class MyUser {
   String? avatar;
   DateTime? birthday;
   late Genre genre;
-
+  String favorite = "";
 
   MyUser(){
     uid = "";
@@ -27,6 +27,7 @@ class MyUser {
     prenom = map["PRENOM"];
     email = map["EMAIL"];
     avatar = map["AVATAR"]??defaultImage;
+
     Timestamp? timestamp = map["BIRTHDAY"];
     if(timestamp == null){
       birthday = DateTime.now();
@@ -35,6 +36,7 @@ class MyUser {
       {
         birthday = timestamp.toDate();
       }
+
   }
 
   //méthode

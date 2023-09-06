@@ -2,6 +2,7 @@ import 'package:firstbd233/view/liste_personne.dart';
 import 'package:firstbd233/view/my_background.dart';
 import 'package:firstbd233/view/my_carte.dart';
 import 'package:firstbd233/view/my_drawer.dart';
+import 'package:firstbd233/view/my_favorite_page.dart';
 import 'package:flutter/material.dart';
 
 class MyDashBord extends StatefulWidget {
@@ -65,7 +66,7 @@ class _MyDashBordState extends State<MyDashBord> {
     switch(indexPage){
       case 0 : return MyCarte();
       case 1 : return ListPersonne();
-      case 2 : return Center(child: Text("Afficher favoris"));
+      case 2 : return MyFavoritepage();
       default : return Text("Erreur");
     }
   }

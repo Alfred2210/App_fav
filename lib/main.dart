@@ -9,12 +9,13 @@ import 'package:firstbd233/constante/constant.dart';
 import 'package:firstbd233/controller/firebase_helper.dart';
 import 'package:firstbd233/controller/my_animation.dart';
 import 'package:firstbd233/controller/permission_photo.dart';
-import 'package:firstbd233/firebase_options.dart';
 import 'package:firstbd233/view/my_background.dart';
 import 'package:firstbd233/view/my_dashboard.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
+
+import 'firebase_options.dart';
 
 void main() async{
   WidgetsFlutterBinding.ensureInitialized();
